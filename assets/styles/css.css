@@ -6,11 +6,8 @@
 }
 body{
     font-family: 'Lexend Deca', sans-serif;
-    max-width: 100%;
-    max-height: 100vh;
+    min-height: 100vh;
     background:rgb(247, 242, 242);
-
-    
 }
 
 header{
@@ -21,10 +18,45 @@ header{
    
 }
 
+.container{
+    max-width: 144rem;
+    margin: 0 auto;
+    padding:40px 5%;
+}
+
+main.container{
+    padding:100px 5%;
+}
+.searchBar{
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap:20px;
+    
+}
+#btnBusca{
+    display: none;
+}
+#txtBusca{
+    background: none;
+    border: none;
+    width: 100%;
+}
+
+#txtBusca::placeholder, #txtBusca:focus {
+   color: #ffff;
+   opacity: 0.5;
+    outline: none;
+}
+
+
+
 .titulo-cabecalho{
     display: flex;
-    justify-content: space-around;
-    padding: 41px;
+    justify-content: space-between;
+    margin-bottom: 73px;
     color: #ffffff;
     font-size: 24px;
     line-height: 30px;
@@ -36,7 +68,7 @@ section{
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 100px;
+    
 }
 
 
